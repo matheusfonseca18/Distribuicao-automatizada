@@ -1,0 +1,6 @@
+customtkinter
+CTkMessagebox
+pandas
+Pillow
+openpyxl
+tkcalendar
