@@ -6,6 +6,7 @@ import os
 from tkinter.filedialog import askopenfilename
 from PIL import Image
 from logica_interface import salvar_dados, carregar_dados, carregar_dados_arquivo, validar_numero, processar_excel_escala, baixar_escala_modelo
+from logica_negocio import gerar_distribuicao
 
 # Listas globais que armazena os dicionários de dados das atividades
 NOME_ARQUIVO_DADOS_ATIVIDADES = "atividades_pendentes.json"
@@ -319,7 +320,7 @@ def abrir_janela_link(dados_atividade):
 # INTERFACE
 
 root = ctk.CTk()
-root.geometry("900x600")
+root.geometry("900x700")
 root.title("Distribuição Automatizada")
 validar_entrada_numero = root.register(validar_numero)
 
@@ -397,8 +398,11 @@ for i, titulo in enumerate(subtitulos):
     label.grid(row=0, column=i, padx=10, pady=5)
 
 # Frame de Atividades
-frame_atividades = ctk.CTkScrollableFrame(frame_container_lista, height=250)
+frame_atividades = ctk.CTkScrollableFrame(frame_container_lista, height=200)
 frame_atividades.pack(fill="both", expand=True)
+
+gerar_dist = ctk.CTkButton(root, text="Gerar Distribuição", command=gerar_distribuicao)
+gerar_dist.pack(pady=(0, 10))
 
 
 # INICIALIZAÇÃO

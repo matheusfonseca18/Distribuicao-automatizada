@@ -1,7 +1,681 @@
 {
-    "2026-02-01 00:00:00": {
+    "2026-03-01 00:00:00": {
         "MANHA": [
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO"
+        ],
+        "TARDE": [
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA"
+        ]
+    },
+    "2026-03-02 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
             "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-03 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-04 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-05 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA"
+        ]
+    },
+    "2026-03-06 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-07 00:00:00": {
+        "MANHA": [
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-08 00:00:00": {
+        "MANHA": [
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-09 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-10 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA"
+        ]
+    },
+    "2026-03-11 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-12 00:00:00": {
+        "MANHA": [
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-13 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-14 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY"
+        ]
+    },
+    "2026-03-15 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY"
+        ]
+    },
+    "2026-03-16 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-17 00:00:00": {
+        "MANHA": [
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-18 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-19 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-20 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-21 00:00:00": {
+        "MANHA": [
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS"
+        ],
+        "TARDE": [
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA"
+        ]
+    },
+    "2026-03-22 00:00:00": {
+        "MANHA": [
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS"
+        ],
+        "TARDE": [
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA"
+        ]
+    },
+    "2026-03-23 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-24 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-25 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-26 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-27 00:00:00": {
+        "MANHA": [
+            "MATHEUS FONSECA",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "ALDILENE DA SILVA",
+            "GABRIELA DE FREITAS",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "VICTORIA EVANGELISTA",
+            "KARINA VAZ",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "2026-03-28 00:00:00": {
+        "MANHA": [
+            "STANLEY FELIX",
             "STEPHANIE DUARTE PIERALLINI",
             "SAMARA BLANCO",
             "KAUE VIEIRA"
@@ -12,492 +686,20 @@
             "ERIK OLIVEIRA"
         ]
     },
-    "2026-02-02 00:00:00": {
+    "2026-03-29 00:00:00": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
             "STANLEY FELIX",
             "STEPHANIE DUARTE PIERALLINI",
             "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "KAUE VIEIRA"
         ],
         "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-03 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "STANLEY FELIX",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-04 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-05 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
             "VICTORIA EVANGELISTA",
             "KARINA VAZ",
             "ERIK OLIVEIRA"
         ]
     },
-    "2026-02-06 00:00:00": {
-        "MANHA": [
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-07 00:00:00": {
-        "MANHA": [
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-08 00:00:00": {
-        "MANHA": [
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-09 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-10 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA"
-        ]
-    },
-    "2026-02-11 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-12 00:00:00": {
-        "MANHA": [
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-13 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA"
-        ]
-    },
-    "2026-02-14 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY"
-        ]
-    },
-    "2026-02-15 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY"
-        ]
-    },
-    "2026-02-16 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-17 00:00:00": {
-        "MANHA": [
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-18 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-19 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-20 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-21 00:00:00": {
-        "MANHA": [
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA"
-        ],
-        "TARDE": [
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA"
-        ]
-    },
-    "2026-02-22 00:00:00": {
-        "MANHA": [
-            "ALDILENE DA SILVA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA"
-        ],
-        "TARDE": [
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA"
-        ]
-    },
-    "2026-02-23 00:00:00": {
+    "2026-03-30 00:00:00": {
         "MANHA": [
             "MATHEUS FONSECA",
             "LEONARDO JULIAO DA COSTA",
@@ -505,18 +707,17 @@
             "FAGNER VIANA",
             "ALDILENE DA SILVA",
             "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
             "ETIANE RAMOS DE OLIVEIRA FRANCA",
             "STANLEY FELIX",
             "STEPHANIE DUARTE PIERALLINI",
             "SAMARA BLANCO",
+            "KAUE VIEIRA",
             "NATHALIA MAGALH\u00c3ES",
             "CAROLINE ARAUJO",
             "GUSTAVO CHIODE",
             "THALES RIBEIRO"
         ],
         "TARDE": [
-            "JUCELI MENDES",
             "ROBSON SANTOS",
             "FERNANDA DE GODOY",
             "ANDRESSA GONCALVES",
@@ -530,33 +731,7 @@
             "RICARDO MOYSES"
         ]
     },
-    "2026-02-24 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-25 00:00:00": {
+    "2026-03-31 00:00:00": {
         "MANHA": [
             "MATHEUS FONSECA",
             "LEONARDO JULIAO DA COSTA",
@@ -564,40 +739,6 @@
             "FAGNER VIANA",
             "ALDILENE DA SILVA",
             "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-26 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
             "ETIANE RAMOS DE OLIVEIRA FRANCA",
             "NATHALIA MAGALH\u00c3ES",
             "CAROLINE ARAUJO",
@@ -605,7 +746,6 @@
             "THALES RIBEIRO"
         ],
         "TARDE": [
-            "JUCELI MENDES",
             "ROBSON SANTOS",
             "FERNANDA DE GODOY",
             "ANDRESSA GONCALVES",
@@ -614,51 +754,6 @@
             "JEAN COSTA",
             "GABRIELA GOMES",
             "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-27 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "GABRIELA DE FREITAS",
-            "ARLENE RODRIGUES",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-02-28 00:00:00": {
-        "MANHA": [
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO"
-        ],
-        "TARDE": [
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA"
         ]
     }
 }
