@@ -2,6 +2,11 @@ import json
 import os
 import random
 import pandas as pd
+from openpyxl import Workbook
+from openpyxl.utils.dataframe import dataframe_to_rows
+from openpyxl.worksheet.table import Table, TableStyleInfo
+from CTkMessagebox import CTkMessagebox
+from tkinter import filedialog
 
 # lê os arquivos JSON
 def ler_arquivos_json(nome_arquivo):
@@ -11,22 +16,15 @@ def ler_arquivos_json(nome_arquivo):
     return {}
 
 def salvar_arquivo_json(nome_arquivo, dados):
-    # if os.path.exists(nome_arquivo):
-    with open(nome_arquivo, "w") as f:
-        json.dump(dados, f, indent=4)
+    if os.path.exists(nome_arquivo):
+        with open(nome_arquivo, "w") as f:
+            json.dump(dados, f, indent=4)
 
 def distribuir_por_turno(lista_colaboradores, lista_atividades, historico, data_atual):
-    # ordena por grupo
     atividades_ordenadas = sorted(lista_atividades, key=lambda x: int(x['grupo']))
-    
-    disponiveis = random.sample(lista_colaboradores, len(lista_colaboradores))
-    
+    disponiveis = list(lista_colaboradores) # Cópia da lista
     alocacao = {atv['nome']: [] for atv in lista_atividades}
-    
-    # Rastreia onde o colaborador foi escalado primeiro para validar links
     origem_do_colaborador = {}
-
-    # Mapa de links para consulta rápida
     mapa_links = {atv['nome']: [l.strip() for l in atv.get('link', "").split(",") if l.strip()] for atv in lista_atividades}
 
     for atividade in atividades_ordenadas:
@@ -34,32 +32,36 @@ def distribuir_por_turno(lista_colaboradores, lista_atividades, historico, data_
         qtd_necessaria = int(atividade['pessoas'])
         links_raiz = mapa_links.get(nome_atv, [])
 
-        # equilíbrio
         def calcular_peso_escolha(colab):
-            # Busca dados no histórico: {"qtd": 0, "ultima_data": ""}
+            # Histórico específico da atividade (Fator Principal)
             dados_h = historico.get(colab, {}).get(nome_atv, {"qtd": 0, "ultima_data": ""})
             
-            score = dados_h["qtd"]
+            # Total de atividades que a pessoa já fez
+            total_geral = sum(info["qtd"] for info in historico.get(colab, {}).values())
             
-            # Penalidade por repetição: se trabalhou ontem, score sobe muito
-            # Isso joga o colaborador para o fim da fila, mas o mantém como opção se não houver outros
-            if dados_h["ultima_data"] != "" and dados_h["ultima_data"] < data_atual:
-                score += 100 
+            # PENALIDADE PESADA: Se ele já fez ESSA atividade muitas vezes,o score sobe drasticamente (multiplicador de 100)
+            score = (dados_h["qtd"] * 100) + total_geral
+            
+            # Bloqueio de repetição diária (se trabalhou nela por último, vai pro fim da fila)
+            if dados_h["ultima_data"] == data_atual:
+                score += 500
             
             return score
 
+        # REORDENA a cada nova atividade para garantir que o mais apto no momento seja eleito
         disponiveis.sort(key=calcular_peso_escolha)
 
-        # alocação
         vagas_faltantes = qtd_necessaria - len(alocacao[nome_atv])
         
-        if vagas_faltantes > 0:
+        if vagas_faltantes > 0 and disponiveis:
+            # Pega os N primeiros que têm o MENOR score para ESTA atividade
             novos = disponiveis[:vagas_faltantes]
+            
             for colaborador in novos:
                 alocacao[nome_atv].append(colaborador)
                 origem_do_colaborador[colaborador] = nome_atv
                 
-                # Atualiza Histórico da Atividade Principal
+                # ATUALIZAÇÃO ÚNICA: Evita duplicar histórico
                 if colaborador not in historico: historico[colaborador] = {}
                 if nome_atv not in historico[colaborador]:
                     historico[colaborador][nome_atv] = {"qtd": 0, "ultima_data": ""}
@@ -67,7 +69,7 @@ def distribuir_por_turno(lista_colaboradores, lista_atividades, historico, data_
                 historico[colaborador][nome_atv]["qtd"] += 1
                 historico[colaborador][nome_atv]["ultima_data"] = data_atual
 
-                # Distribui para Links Diretos (B)
+                # Distribui para Links Diretos (Sem contar +1 no histórico de 'qtd' para não inflar)
                 for nome_linkado in links_raiz:
                     if nome_linkado in alocacao:
                         atv_dest = next((a for a in lista_atividades if a['nome'] == nome_linkado), None)
@@ -77,11 +79,6 @@ def distribuir_por_turno(lista_colaboradores, lista_atividades, historico, data_
                             
                             if (v_dest > 0 or pode_exc) and colaborador not in alocacao[nome_linkado]:
                                 alocacao[nome_linkado].append(colaborador)
-                                # Atualiza Histórico do Link
-                                if nome_linkado not in historico[colaborador]:
-                                    historico[colaborador][nome_linkado] = {"qtd": 0, "ultima_data": ""}
-                                historico[colaborador][nome_linkado]["qtd"] += 1
-                                historico[colaborador][nome_linkado]["ultima_data"] = data_atual
             
             for n in novos:
                 disponiveis.remove(n)
@@ -125,10 +122,8 @@ def distribuir_por_turno(lista_colaboradores, lista_atividades, historico, data_
                             elif not pode_exc:
                                 break
 
-        # Limpezas Finais
+        # Limpeza FinaL
         alocacao[nome_atv] = list(set(alocacao[nome_atv]))
-        if not alocacao[nome_atv] and atividade.get('pode_vazio') == "N":
-            alocacao[nome_atv] = ["SEM COLABORADOR"]
 
     # Distribui quem sobrou
     if disponiveis:
@@ -142,7 +137,6 @@ def distribuir_por_turno(lista_colaboradores, lista_atividades, historico, data_
     return alocacao, historico
 
 
-# --- EXECUÇÃO PRINCIPAL ---
 def gerar_distribuicao():
     # Carrega os dados
     escala_json = ler_arquivos_json("dados_escala.json")
@@ -165,73 +159,102 @@ def gerar_distribuicao():
             )
             resultado_final[data_str][nome_do_turno] = alocacao_turno
 
-    # Salva o histórico para a próxima vez que rodar o código (funciona pro print, mas n cria o arquivo)
-    salvar_arquivo_json("historico.json", historico_geral)
+    # GERAÇÃO DO EXCEL
+    caminho_salvar = filedialog.asksaveasfilename(
+        defaultextension='.xlsx', 
+        filetypes=[("Arquivo Excel", "*.xlsx")], 
+        title='Salvar Distribuição', 
+        initialfile=f'Distribuição.xlsx'
+    )
 
-    # --- SAÍDA NO TERMINAL ---
-    # for data, turnos in resultado_final.items():
-    #     print(f"\n=== ESCALA DO DIA: {data} ===")
+    if caminho_salvar:
+        try:
+            nome_arquivo_excel = os.path.basename(caminho_salvar)
 
-    #     for atividade in atividades:
-    #         nome_atividade = atividade['nome']
-    #         print('-----------------------------------------------------')
-    #         print(f"Atividade: {nome_atividade.upper()}")
-
-    #         for nome_turno, distribuicao_turno in turnos.items():
-    #             equipe = distribuicao_turno.get(nome_atividade, [])
-    #             print(f"  {nome_turno}: {' / '.join(equipe)}")
-
-    # # --- RELATÓRIO DE HISTÓRICO ---
-    # print("\n\n=== RELATÓRIO DE ACÚMULO (HISTÓRICO) ===")
-    # for colab, tarefas in sorted(historico_geral.items()):
-    #     tarefas_ordenadas = sorted(tarefas.items())
-    #     resumo = ", ".join([f"{t}: {q}" for t, q in tarefas_ordenadas])
-
-    # --- GERAÇÃO DO EXCEL ---
-    nome_arquivo_excel = "Escala_Final.xlsx"
-
-    with pd.ExcelWriter(nome_arquivo_excel) as writer:
-        # ESQUELETO
-        linhas_base = []
-        lista_turnos = sorted(list(set(t for turnos in escala_json.values() for t in turnos.keys())))
-        
-        for atividade in atividades:
-            nome_atv_fixo = atividade['nome'].strip().upper()
-            for turno in lista_turnos:
-                linhas_base.append({
-                    "ATIVIDADE": nome_atv_fixo,
-                    "TURNO": turno
-                })
-
-        df_final = pd.DataFrame(linhas_base)
-
-        # PREENCHIMENTO DAS DATAS
-        for data, turnos_da_data in resultado_final.items():
-            data_curta = data.split(" ")[0]
-            coluna_colaboradores = []
-
-            for index, row in df_final.iterrows():
-                atv_procurada = row["ATIVIDADE"]
-                turno_procurado = row["TURNO"]
-                
-                # Acessa os dados alocados para aquele turno e dia
-                alocacao_turno = turnos_da_data.get(turno_procurado, {})
-                
-                # Busca ignorando maiúsculas/minúsculas
-                equipe = []
-                for nome_atv_json, lista_nomes in alocacao_turno.items():
-                    if nome_atv_json.strip().upper() == atv_procurada:
-                        equipe = lista_nomes
-                        break
-                coluna_colaboradores.append(" / ".join(equipe))
+            wb = Workbook()
             
-            df_final[data_curta] = coluna_colaboradores
+            # ABA DISTRIBUIÇÃO (DADOS DO PANDAS)
+            ws_dist = wb.active
+            ws_dist.title = "Distribuição"
+            
+            # Criar o DataFrame df_final
+            linhas_base = []
+            lista_turnos = sorted(list(set(t for turnos in escala_json.values() for t in turnos.keys())))
+            for atividade in atividades:
+                nome_atv_fixo = atividade['nome'].strip().upper()
+                for turno in lista_turnos:
+                    linhas_base.append({"ATIVIDADE": nome_atv_fixo, "TURNO": turno})
+            
+            df_final = pd.DataFrame(linhas_base)
+            for data, turnos_da_data in resultado_final.items():
+                data_curta = data.split(" ")[0]
+                coluna_colaboradores = []
+                for index, row in df_final.iterrows():
+                    atv_procurada = row["ATIVIDADE"]
+                    turno_procurado = row["TURNO"]
+                    alocacao_turno = turnos_da_data.get(turno_procurado, {})
+                    equipe = next((lista for n, lista in alocacao_turno.items() if n.strip().upper() == atv_procurada), [])
+                    coluna_colaboradores.append(" / ".join(equipe))
+                df_final[data_curta] = coluna_colaboradores
 
-        df_final.to_excel(writer, sheet_name="Distribuição", index=False)
-        
-        # Aba Histórico
-        dados_historico = [{"COLABORADOR": c, "ACÚMULO": ", ".join([f"{t}: {info['qtd']}" for t, info in sorted(tar.items())])} 
-                        for c, tar in sorted(historico_geral.items())]
-        pd.DataFrame(dados_historico).to_excel(writer, sheet_name="Histórico", index=False)
+            # Converter DataFrame do Pandas para linhas do Openpyxl
+            for r in dataframe_to_rows(df_final, index=False, header=True):
+                ws_dist.append(r)
 
-    print(f"Arquivo gerado: {nome_arquivo_excel}")
+            # ABA HISTÓRICO
+            ws_historico = wb.create_sheet(title="Histórico")
+            
+            colunas = ['COLABORADOR', 'TURNO', 'PRÉ', 'CLASSIFICAÇÃO', 'CNP RJ', 
+                    'OCORRÊNCIAS', 'CONFIRMAÇÃO', 'TAREFA SAC', 'JOIN', 
+                    'SHAREPOINT', 'CLASS - VEIC UM DIA', 'RÁDIO', 'Coluna1']
+            ws_historico.append(colunas)
+
+            colaboradores = [
+                ['MATHEUS FONSECA', 'MANHA'], ['LEONARDO JULIAO DA COSTA', 'MANHA'],
+                ['RODRIGO SEVERO', 'MANHA'], ['JUCELI MENDES', 'TARDE'],
+                ['ROBSON SANTOS', 'TARDE'], ['FERNANDA DE GODOY', 'TARDE'],
+                ['FAGNER VIANA', 'MANHA'], ['ANDRESSA GONCALVES', 'TARDE'],
+                ['MARCOS THADEU', 'TARDE'], ['CARLOS DANIEL DE LIMA FERREIRA', 'TARDE'],
+                ['ALDILENE DA SILVA', 'MANHA'], ['ARLENE RODRIGUES', 'MANHA'], 
+                ['ETIANE RAMOS DE OLIVEIRA FRANCA', 'MANHA'],
+                ['VICTORIA EVANGELISTA', 'TARDE'], ['KARINA VAZ', 'TARDE'],
+                ['ERIK OLIVEIRA', 'TARDE'], ['STANLEY FELIX', 'MANHA'],
+                ['STEPHANIE DUARTE PIERALLINI', 'MANHA'], ['SAMARA BLANCO', 'MANHA'],
+                ['KAUE VIEIRA', 'MANHA'], ['JEAN COSTA', 'TARDE'],
+                ['GABRIELA GOMES', 'TARDE'], ['RICARDO MOYSES', 'TARDE'],
+                ['NATHALIA MAGALHÃES', 'MANHA'], ['CAROLINE ARAUJO', 'MANHA'],
+                ['GUSTAVO CHIODE', 'MANHA'], ['THALES RIBEIRO', 'MANHA'], ['ALESSANDRA LISONI TENORIO', 'MANHA'], ['DAIANE SOUSA MATOS', 'MANHA']
+            ]
+
+            for row in colaboradores:
+                ws_historico.append(row)
+
+            linha_busca_inicio = 2
+            linha_busca_fim = 3
+
+            # Range de colunas de 3 a 12 (PRÉ até RÁDIO)
+            for col_idx in range(3, 13):
+                for row_num in range(2, len(colaboradores) + 2):
+                    # row_num trava no colaborador, mas o intervalo muda conforme a coluna col_idx
+                    formula = f'=SUMPRODUCT(--ISNUMBER(SEARCH(A{row_num},Distribuição!$C${linha_busca_inicio}:$AG${linha_busca_fim})))'
+                    ws_historico.cell(row=row_num, column=col_idx).value = formula
+                
+                # dps de preencher todas as linhas de uma coluna, incrementamos o intervalo para a próxima
+                linha_busca_inicio += 2
+                linha_busca_fim += 2
+
+            # Cria o Objeto de Tabela
+            ultima_celula = f'M{len(colaboradores) + 1}'
+            tab = Table(displayName='Tabela_Historico', ref=f'A1:{ultima_celula}')
+            
+            # Estilo visual da tabela
+            style = TableStyleInfo(name="TableStyleMedium9", showRowStripes=True)
+            tab.tableStyleInfo = style
+            ws_historico.add_table(tab)
+
+            # Salvar o arquivo final
+            wb.save(nome_arquivo_excel)
+
+            CTkMessagebox(title="Sucesso", message="Distribuição baixado com sucesso!", icon="check")
+        except Exception as e:
+            CTkMessagebox(title="Erro", message=f"Erro ao salvar: {e}", icon="cancel")

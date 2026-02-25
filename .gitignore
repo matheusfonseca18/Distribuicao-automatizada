@@ -1,0 +1,11 @@
+__pycache__
+app
+escala_jup.ipynb
+ESCALA-manha.xlsx
+Modelo_Escala.xlsx
+~$*.xlsx
+*.xlsx
+interface - Período de Distribuição.py
+dados_escala copy.json
+logica_negocio copy.py
+build
