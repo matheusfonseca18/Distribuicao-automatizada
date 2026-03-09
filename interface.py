@@ -39,7 +39,7 @@ def importar_escala():
         salvar_dados(NOME_ARQUIVO_DADOS_ARQUIVO, dados_arquivo)
         
         nome_arquivo.configure(text=str(nome_arquivo_importado))
-        CTkMessagebox(title="Sucesso", message="Arquivo importado com sucesso!")
+        CTkMessagebox(title="Sucesso", message=f"Arquivo importado com sucesso: {nome_arquivo_importado}")
 
 
 # FUNÇÕES de Interface

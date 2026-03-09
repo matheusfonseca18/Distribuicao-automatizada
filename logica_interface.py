@@ -102,9 +102,6 @@ def carregar_dados(nome_arquivo):
                           message=f"O arquivo de dados está corrompido ou não exite. Será iniciado com uma lista vazia.\n{e}",
                           icon="warning")
             return []
-        except Exception as e:
-             print(f"Erro ao carregar dados: {e}")
-             return []
     else:
         return [] # Inicia vazio se o arquivo não existir
     
@@ -119,9 +116,6 @@ def carregar_dados_arquivo(nome_arquivo, label):
                           message=f"O arquivo de dados está corrompido ou não exite. Será iniciado com uma lista vazia.\n{e}",
                           icon="warning")
             return []
-        except Exception as e:
-             print(f"Erro ao carregar dados: {e}")
-             return []
     else:
         return [] # Inicia vazio se o arquivo não existir
     

@@ -169,7 +169,7 @@ def gerar_distribuicao():
 
     if caminho_salvar:
         try:
-            nome_arquivo_excel = os.path.basename(caminho_salvar)
+            # nome_arquivo_excel = os.path.basename(caminho_salvar)
 
             wb = Workbook()
             
@@ -204,56 +204,49 @@ def gerar_distribuicao():
             # ABA HISTÓRICO
             ws_historico = wb.create_sheet(title="Histórico")
             
-            colunas = ['COLABORADOR', 'TURNO', 'PRÉ', 'CLASSIFICAÇÃO', 'CNP RJ', 
-                    'OCORRÊNCIAS', 'CONFIRMAÇÃO', 'TAREFA SAC', 'JOIN', 
-                    'SHAREPOINT', 'CLASS - VEIC UM DIA', 'RÁDIO', 'Coluna1']
-            ws_historico.append(colunas)
-
-            colaboradores = [
-                ['MATHEUS FONSECA', 'MANHA'], ['LEONARDO JULIAO DA COSTA', 'MANHA'],
-                ['RODRIGO SEVERO', 'MANHA'], ['JUCELI MENDES', 'TARDE'],
-                ['ROBSON SANTOS', 'TARDE'], ['FERNANDA DE GODOY', 'TARDE'],
-                ['FAGNER VIANA', 'MANHA'], ['ANDRESSA GONCALVES', 'TARDE'],
-                ['MARCOS THADEU', 'TARDE'], ['CARLOS DANIEL DE LIMA FERREIRA', 'TARDE'],
-                ['ALDILENE DA SILVA', 'MANHA'], ['ARLENE RODRIGUES', 'MANHA'], 
-                ['ETIANE RAMOS DE OLIVEIRA FRANCA', 'MANHA'],
-                ['VICTORIA EVANGELISTA', 'TARDE'], ['KARINA VAZ', 'TARDE'],
-                ['ERIK OLIVEIRA', 'TARDE'], ['STANLEY FELIX', 'MANHA'],
-                ['STEPHANIE DUARTE PIERALLINI', 'MANHA'], ['SAMARA BLANCO', 'MANHA'],
-                ['KAUE VIEIRA', 'MANHA'], ['JEAN COSTA', 'TARDE'],
-                ['GABRIELA GOMES', 'TARDE'], ['RICARDO MOYSES', 'TARDE'],
-                ['NATHALIA MAGALHÃES', 'MANHA'], ['CAROLINE ARAUJO', 'MANHA'],
-                ['GUSTAVO CHIODE', 'MANHA'], ['THALES RIBEIRO', 'MANHA'], ['ALESSANDRA LISONI TENORIO', 'MANHA'], ['DAIANE SOUSA MATOS', 'MANHA']
-            ]
-
-            for row in colaboradores:
-                ws_historico.append(row)
-
-            linha_busca_inicio = 2
-            linha_busca_fim = 3
-
-            # Range de colunas de 3 a 12 (PRÉ até RÁDIO)
-            for col_idx in range(3, 13):
-                for row_num in range(2, len(colaboradores) + 2):
-                    # row_num trava no colaborador, mas o intervalo muda conforme a coluna col_idx
-                    formula = f'=SUMPRODUCT(--ISNUMBER(SEARCH(A{row_num},Distribuição!$C${linha_busca_inicio}:$AG${linha_busca_fim})))'
-                    ws_historico.cell(row=row_num, column=col_idx).value = formula
-                
-                # dps de preencher todas as linhas de uma coluna, incrementamos o intervalo para a próxima
-                linha_busca_inicio += 2
-                linha_busca_fim += 2
-
-            # Cria o Objeto de Tabela
-            ultima_celula = f'M{len(colaboradores) + 1}'
-            tab = Table(displayName='Tabela_Historico', ref=f'A1:{ultima_celula}')
+            # Identifica os colaboradores únicos na escala
+            todos_colaboradores = set()
+            for data_str, turnos in escala_json.items():
+                for nome_turno, lista in turnos.items():
+                    for nome_colab in lista:
+                        todos_colaboradores.add((nome_colab.strip().upper(), nome_turno.upper()))
             
-            # Estilo visual da tabela
+            # Ordenar por turno e depois nome
+            lista_colaboradores_ordenada = sorted(list(todos_colaboradores), key=lambda x: (x[1], x[0]))
+
+            # Identifica as atividades para criar as colunas
+            nomes_atividades = [atv['nome'].strip().upper() for atv in atividades]
+            colunas_historico = ['COLABORADOR', 'TURNO'] + nomes_atividades
+            ws_historico.append(colunas_historico)
+
+            # Preenche os dados e as fórmulas
+            for i, (nome_colab, turno_colab) in enumerate(lista_colaboradores_ordenada, start=2):
+                # Escreve Nome e Turno
+                ws_historico.cell(row=i, column=1).value = nome_colab
+                ws_historico.cell(row=i, column=2).value = turno_colab
+                
+                # Para cada atividade (coluna), insere a fórmula de contagem
+                for j, nome_atv in enumerate(nomes_atividades, start=3):                    
+                    formula = (
+                        f'=SUMPRODUCT((Distribuição!$A$2:$A$1000="{nome_atv}")*'
+                        f'(Distribuição!$B$2:$B$1000="{turno_colab}")*'
+                        f'(--ISNUMBER(SEARCH("{nome_colab}", Distribuição!$C$2:$AG$1000))))'
+                    )
+                    ws_historico.cell(row=i, column=j).value = formula
+
+            # Formata como Tabela
+            ultima_col_letra = chr(64 + len(colunas_historico)) # Converte índice para letra
+            if len(colunas_historico) > 26: # se tiver muitas atividades
+                ultima_col_letra = "Z" 
+                
+            ref_tabela = f'A1:{ultima_col_letra}{len(lista_colaboradores_ordenada) + 1}'
+            tab = Table(displayName='Tabela_Historico', ref=ref_tabela)
             style = TableStyleInfo(name="TableStyleMedium9", showRowStripes=True)
             tab.tableStyleInfo = style
             ws_historico.add_table(tab)
-
+            
             # Salvar o arquivo final
-            wb.save(nome_arquivo_excel)
+            wb.save(caminho_salvar)
 
             CTkMessagebox(title="Sucesso", message="Distribuição baixado com sucesso!", icon="check")
         except Exception as e:

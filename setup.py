@@ -17,7 +17,7 @@ if sys.platform == "win32":
 
 setup(
     name="Distribuidor",
-    version="0.1",
+    version="0.2",
     description="Distribuidor de atividades",
     options={"build_exe": build_exe_options},
     executables=[
