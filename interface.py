@@ -189,7 +189,17 @@ def criar_widget_atividade(atividade_dados):
     botao_apagar = ctk.CTkButton(novo_frame, text='Apagar', command=lambda f=novo_frame: apagar_atividade(f), width=60)
     botao_apagar.grid(row=0, column=7, padx=10)
 
-def apagar_atividade(frame_para_apagar): # Remove o widget da tela e o dicionário da lista de dados
+def apagar_atividade(frame_para_apagar):
+
+    msg = CTkMessagebox(title="Confirmação", message=f"Tem certeza que deseja apagar a atividade {frame_para_apagar.dados['nome']}?", icon="question", option_1="Sim", option_2="Não")
+
+    resposta = msg.get()
+
+    if resposta == "Sim":
+        confirm_apagar_atividade(frame_para_apagar)
+        CTkMessagebox(title="Sucesso", message=f"Atividade {frame_para_apagar.dados['nome']} foi apagada com sucesso!", icon="check")
+
+def confirm_apagar_atividade(frame_para_apagar): # Remove o widget da tela e o dicionário da lista de dados
     if hasattr(frame_para_apagar, 'dados') and frame_para_apagar.dados in dados_atividades:
         nome_atividade_excluida = frame_para_apagar.dados['nome']
         for atividade in dados_atividades:

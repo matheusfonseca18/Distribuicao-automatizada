@@ -8,7 +8,7 @@ def get_customtkinter_path():
 
 build_exe_options = {
     "packages": ["os", "customtkinter", "logica_interface", "logica_negocio", "PIL"],
-    "include_files": ["atividades_pendentes.json", "dados_arquivo.json", "dados_escala.json", "link.png", (get_customtkinter_path(), "customtkinter")],
+    "include_files": ["link.png", (get_customtkinter_path(), "customtkinter")],
 }
 
 base = None
@@ -17,7 +17,7 @@ if sys.platform == "win32":
 
 setup(
     name="Distribuidor",
-    version="0.2",
+    version="0.3",
     description="Distribuidor de atividades",
     options={"build_exe": build_exe_options},
     executables=[

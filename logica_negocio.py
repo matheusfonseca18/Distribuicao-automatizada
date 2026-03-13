@@ -169,8 +169,6 @@ def gerar_distribuicao():
 
     if caminho_salvar:
         try:
-            # nome_arquivo_excel = os.path.basename(caminho_salvar)
-
             wb = Workbook()
             
             # ABA DISTRIBUIÇÃO (DADOS DO PANDAS)
