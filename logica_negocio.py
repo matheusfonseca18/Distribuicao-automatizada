@@ -2,11 +2,15 @@ import json
 import os
 import random
 import pandas as pd
+from datetime import datetime, timedelta
 from openpyxl import Workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
 from openpyxl.worksheet.table import Table, TableStyleInfo
 from CTkMessagebox import CTkMessagebox
 from tkinter import filedialog
+from itertools import cycle
+from apelidos_utils import carregar_apelidos, montar_mapa_apelidos, nome_exibicao
+
 
 # lê os arquivos JSON
 def ler_arquivos_json(nome_arquivo):
@@ -20,118 +24,177 @@ def salvar_arquivo_json(nome_arquivo, dados):
         with open(nome_arquivo, "w") as f:
             json.dump(dados, f, indent=4)
 
-def distribuir_por_turno(lista_colaboradores, lista_atividades, historico, data_atual):
+def converter_data(data_str):
+    data_limpa = str(data_str).split(" ")[0]
+    formatos = ("%d/%m/%Y", "%Y-%m-%d")
+
+    for formato in formatos:
+        try:
+            return datetime.strptime(data_limpa, formato)
+        except ValueError:
+            pass
+
+    try:
+        return datetime.fromisoformat(str(data_str))
+    except ValueError:
+        return None
+
+def datas_consecutivas(data_anterior, data_atual):
+    anterior = converter_data(data_anterior)
+    atual = converter_data(data_atual)
+    return bool(anterior and atual and anterior + timedelta(days=1) == atual)
+
+def formatar_data_br(data_str):
+    data = converter_data(data_str)
+    if data:
+        return data.strftime("%d/%m/%Y")
+    return str(data_str).split(" ")[0]
+
+def texto_formula_excel(valor):
+    return str(valor).replace('"', '""')
+
+def formatar_equipe(equipe, mapa_apelidos):
+    return " / ".join(nome_exibicao(nome, mapa_apelidos) for nome in equipe)
+
+def distribuir_por_turno(lista_colaboradores, lista_atividades, historico, data_atual, turno_alvo):
     atividades_ordenadas = sorted(lista_atividades, key=lambda x: int(x['grupo']))
-    disponiveis = list(lista_colaboradores) # Cópia da lista
+    colaboradores_turno = list(dict.fromkeys(lista_colaboradores))
+    equipe_reduzida = len(colaboradores_turno) <= 4
+    disponiveis = list(colaboradores_turno)
+    ordem_original = {colab: idx for idx, colab in enumerate(colaboradores_turno)}
     alocacao = {atv['nome']: [] for atv in lista_atividades}
-    origem_do_colaborador = {}
+    mapa_atividades = {atv['nome']: atv for atv in lista_atividades}
     mapa_links = {atv['nome']: [l.strip() for l in atv.get('link', "").split(",") if l.strip()] for atv in lista_atividades}
+    data_atual_formatada = formatar_data_br(data_atual)
+
+    dias_trabalhados = historico.setdefault("__dias_trabalhados__", {})
+    for colaborador in colaboradores_turno:
+        registro_dias = dias_trabalhados.setdefault(colaborador, {"qtd": 0, "ultima_data": ""})
+        if registro_dias.get("ultima_data") != data_atual_formatada:
+            registro_dias["qtd"] = int(registro_dias.get("qtd", 0)) + 1
+            registro_dias["ultima_data"] = data_atual_formatada
+
+    def qtd_por_turno(atividade):
+        qtd_configurada = int(atividade.get("pessoas", {}).get(turno_alvo, 0))
+        if equipe_reduzida and qtd_configurada > 0:
+            return 1
+        return qtd_configurada
+
+    def pode_exceder(nome_atv):
+        atividade = mapa_atividades.get(nome_atv, {})
+        return atividade.get('pode_exceder') == "S"
+
+    def tem_vaga_ou_excede(nome_atv):
+        atividade = mapa_atividades.get(nome_atv)
+        if not atividade:
+            return False
+
+        return len(alocacao[nome_atv]) < qtd_por_turno(atividade) or pode_exceder(nome_atv)
+
+    def atividades_previstas(nome_atv):
+        previstas = [nome_atv]
+
+        for nome_linkado in mapa_links.get(nome_atv, []):
+            if nome_linkado in alocacao and tem_vaga_ou_excede(nome_linkado):
+                previstas.append(nome_linkado)
+
+        return list(dict.fromkeys(previstas))
+
+    def registrar_alocacao(nome_atv, colaborador, consumir_disponivel=False):
+        if colaborador in alocacao[nome_atv]:
+            return False
+
+        alocacao[nome_atv].append(colaborador)
+
+        if consumir_disponivel and colaborador in disponiveis:
+            disponiveis.remove(colaborador)
+
+        if colaborador not in historico:
+            historico[colaborador] = {}
+        if nome_atv not in historico[colaborador]:
+            historico[colaborador][nome_atv] = {"qtd": 0, "ultima_data": ""}
+
+        historico[colaborador][nome_atv]["qtd"] = int(historico[colaborador][nome_atv].get("qtd", 0)) + 1
+        historico[colaborador][nome_atv]["ultima_data"] = data_atual_formatada
+
+        return True
+
+    def calcular_peso_colaborador(colab, atividades_do_peso):
+        historico_colab = historico.get(colab, {})
+        qtd_dias = max(1, int(dias_trabalhados.get(colab, {}).get("qtd", 1)))
+
+        total_geral = sum(info.get("qtd", 0) for info in historico_colab.values())
+        total_atividade = sum(
+            historico_colab.get(atv, {"qtd": 0}).get("qtd", 0)
+            for atv in atividades_do_peso
+        )
+
+        repetiu_ontem = any(
+            datas_consecutivas(
+                historico_colab.get(atv, {"ultima_data": ""}).get("ultima_data", ""),
+                data_atual
+            )
+            for atv in atividades_do_peso
+        )
+
+        return (
+            1 if repetiu_ontem else 0,
+            total_atividade / qtd_dias,
+            total_geral / qtd_dias,
+            total_atividade,
+            total_geral,
+            ordem_original.get(colab, 0)
+        )
+
+    def pode_receber_atividade(colab, atividades_do_peso):
+        for nome_previsto in atividades_do_peso:
+            if pode_exceder(nome_previsto):
+                continue
+
+            ultima_data = historico.get(colab, {}).get(nome_previsto, {}).get("ultima_data", "")
+            if datas_consecutivas(ultima_data, data_atual_formatada):
+                return False
+
+        return True
+
+    def atribuir_colaborador(atividade, colaborador):
+        nome_atv = atividade['nome']
+        registrar_alocacao(nome_atv, colaborador, consumir_disponivel=True)
+
+        for nome_linkado in mapa_links.get(nome_atv, []):
+            if nome_linkado in alocacao and tem_vaga_ou_excede(nome_linkado):
+                registrar_alocacao(nome_linkado, colaborador)
 
     for atividade in atividades_ordenadas:
         nome_atv = atividade['nome']
-        qtd_necessaria = int(atividade['pessoas'])
-        links_raiz = mapa_links.get(nome_atv, [])
 
-        def calcular_peso_escolha(colab):
-            # Histórico específico da atividade (Fator Principal)
-            dados_h = historico.get(colab, {}).get(nome_atv, {"qtd": 0, "ultima_data": ""})
-            
-            # Total de atividades que a pessoa já fez
-            total_geral = sum(info["qtd"] for info in historico.get(colab, {}).values())
-            
-            # PENALIDADE PESADA: Se ele já fez ESSA atividade muitas vezes,o score sobe drasticamente (multiplicador de 100)
-            score = (dados_h["qtd"] * 100) + total_geral
-            
-            # Bloqueio de repetição diária (se trabalhou nela por último, vai pro fim da fila)
-            if dados_h["ultima_data"] == data_atual:
-                score += 500
-            
-            return score
+        while len(alocacao[nome_atv]) < qtd_por_turno(atividade):
+            previstas = atividades_previstas(nome_atv)
+            candidatos = [
+                colab for colab in disponiveis
+                if colab not in alocacao[nome_atv] and pode_receber_atividade(colab, previstas)
+            ]
 
-        # REORDENA a cada nova atividade para garantir que o mais apto no momento seja eleito
-        disponiveis.sort(key=calcular_peso_escolha)
+            if not candidatos:
+                break
 
-        vagas_faltantes = qtd_necessaria - len(alocacao[nome_atv])
-        
-        if vagas_faltantes > 0 and disponiveis:
-            # Pega os N primeiros que têm o MENOR score para ESTA atividade
-            novos = disponiveis[:vagas_faltantes]
-            
-            for colaborador in novos:
-                alocacao[nome_atv].append(colaborador)
-                origem_do_colaborador[colaborador] = nome_atv
-                
-                # ATUALIZAÇÃO ÚNICA: Evita duplicar histórico
-                if colaborador not in historico: historico[colaborador] = {}
-                if nome_atv not in historico[colaborador]:
-                    historico[colaborador][nome_atv] = {"qtd": 0, "ultima_data": ""}
-                
-                historico[colaborador][nome_atv]["qtd"] += 1
-                historico[colaborador][nome_atv]["ultima_data"] = data_atual
+            candidatos.sort(key=lambda colab: calcular_peso_colaborador(colab, previstas))
+            atribuir_colaborador(atividade, candidatos[0])
 
-                # Distribui para Links Diretos (Sem contar +1 no histórico de 'qtd' para não inflar)
-                for nome_linkado in links_raiz:
-                    if nome_linkado in alocacao:
-                        atv_dest = next((a for a in lista_atividades if a['nome'] == nome_linkado), None)
-                        if atv_dest:
-                            v_dest = int(atv_dest['pessoas']) - len(alocacao[nome_linkado])
-                            pode_exc = atv_dest.get('pode_exceder') == "S"
-                            
-                            if (v_dest > 0 or pode_exc) and colaborador not in alocacao[nome_linkado]:
-                                alocacao[nome_linkado].append(colaborador)
-            
-            for n in novos:
-                disponiveis.remove(n)
-
-        else:
-            # CASO A ATIVIDADE JÁ ESTEJA CHEIA (Verificação B -> C com base na Origem)
-            for nome_linkado in links_raiz:
-                if nome_linkado in alocacao:
-                    atv_dest = next((a for a in lista_atividades if a['nome'] == nome_linkado), None)
-                    if atv_dest:
-                        links_de_b = mapa_links.get(nome_linkado, [])
-                        
-                        for colaborador in alocacao[nome_atv]:
-                            atv_origem = origem_do_colaborador.get(colaborador)
-                            links_autorizados_origem = mapa_links.get(atv_origem, [])
-
-                            v_dest = int(atv_dest['pessoas']) - len(alocacao[nome_linkado])
-                            pode_exc = atv_dest.get('pode_exceder') == "S"
-
-                            # Tenta alocar em B
-                            if (v_dest > 0 or pode_exc) and colaborador not in alocacao[nome_linkado]:
-                                alocacao[nome_linkado].append(colaborador)
-                                if colaborador not in historico: historico[colaborador] = {}
-                                if nome_linkado not in historico[colaborador]:
-                                    historico[colaborador][nome_linkado] = {"qtd": 0, "ultima_data": ""}
-                                historico[colaborador][nome_linkado]["qtd"] += 1
-                                historico[colaborador][nome_linkado]["ultima_data"] = data_atual
-
-                                # Tenta alocar no link de B (C) apenas se a origem autorizar
-                                for link_de_b in links_de_b:
-                                    if link_de_b in links_autorizados_origem and link_de_b in alocacao:
-                                        atv_final = next((a for a in lista_atividades if a['nome'] == link_de_b), None)
-                                        if atv_final:
-                                            v_f = int(atv_final['pessoas']) - len(alocacao[link_de_b])
-                                            if (v_f > 0 or atv_final.get('pode_exceder') == "S") and colaborador not in alocacao[link_de_b]:
-                                                alocacao[link_de_b].append(colaborador)
-                                                if link_de_b not in historico[colaborador]:
-                                                    historico[colaborador][link_de_b] = {"qtd": 0, "ultima_data": ""}
-                                                historico[colaborador][link_de_b]["qtd"] += 1
-                                                historico[colaborador][link_de_b]["ultima_data"] = data_atual
-                            elif not pode_exc:
-                                break
-
-        # Limpeza FinaL
-        alocacao[nome_atv] = list(set(alocacao[nome_atv]))
+        alocacao[nome_atv] = list(dict.fromkeys(alocacao[nome_atv]))
 
     # Distribui quem sobrou
     if disponiveis:
         for atividade in atividades_ordenadas:
             if atividade.get('pode_exceder') == "S":
                 nome_atv_excede = atividade['nome']
-                alocacao[nome_atv_excede].extend(disponiveis)
-                alocacao[nome_atv_excede] = list(set(alocacao[nome_atv_excede]))
+                candidatos = list(disponiveis)
+                candidatos.sort(key=lambda colab: calcular_peso_colaborador(colab, [nome_atv_excede]))
+
+                for colaborador in candidatos:
+                    atribuir_colaborador(atividade, colaborador)
+
+                alocacao[nome_atv_excede] = list(dict.fromkeys(alocacao[nome_atv_excede]))
                 break
 
     return alocacao, historico
@@ -141,13 +204,16 @@ def gerar_distribuicao():
     # Carrega os dados
     escala_json = ler_arquivos_json("dados_escala.json")
     atividades = ler_arquivos_json("atividades_pendentes.json")
+    mapa_apelidos = montar_mapa_apelidos(carregar_apelidos())
     # Carrega o histórico existente ou cria um vazio
     historico_geral = ler_arquivos_json("historico.json") 
 
     resultado_final = {}
 
-    for data_str, turnos in escala_json.items():    
-        resultado_final[data_str] = {}
+    for data_str in sorted(escala_json.keys(), key=lambda data: converter_data(data) or datetime.max):
+        turnos = escala_json[data_str]
+        data_formatada = formatar_data_br(data_str)
+        resultado_final[data_formatada] = {}
         
         for nome_do_turno, lista_colaboradores in turnos.items():
             # recebe a alocação e o histórico atualizado
@@ -155,9 +221,10 @@ def gerar_distribuicao():
                 lista_colaboradores, 
                 atividades, 
                 historico_geral,
-                data_str
+                data_formatada,
+                nome_do_turno
             )
-            resultado_final[data_str][nome_do_turno] = alocacao_turno
+            resultado_final[data_formatada][nome_do_turno] = alocacao_turno
 
     # GERAÇÃO DO EXCEL
     caminho_salvar = filedialog.asksaveasfilename(
@@ -185,14 +252,14 @@ def gerar_distribuicao():
             
             df_final = pd.DataFrame(linhas_base)
             for data, turnos_da_data in resultado_final.items():
-                data_curta = data.split(" ")[0]
+                data_curta = formatar_data_br(data)
                 coluna_colaboradores = []
                 for index, row in df_final.iterrows():
                     atv_procurada = row["ATIVIDADE"]
                     turno_procurado = row["TURNO"]
                     alocacao_turno = turnos_da_data.get(turno_procurado, {})
                     equipe = next((lista for n, lista in alocacao_turno.items() if n.strip().upper() == atv_procurada), [])
-                    coluna_colaboradores.append(" / ".join(equipe))
+                    coluna_colaboradores.append(formatar_equipe(equipe, mapa_apelidos))
                 df_final[data_curta] = coluna_colaboradores
 
             # Converter DataFrame do Pandas para linhas do Openpyxl
@@ -222,13 +289,16 @@ def gerar_distribuicao():
                 # Escreve Nome e Turno
                 ws_historico.cell(row=i, column=1).value = nome_colab
                 ws_historico.cell(row=i, column=2).value = turno_colab
+                nome_colab_busca = texto_formula_excel(nome_exibicao(nome_colab, mapa_apelidos))
+                turno_colab_formula = texto_formula_excel(turno_colab)
                 
                 # Para cada atividade (coluna), insere a fórmula de contagem
                 for j, nome_atv in enumerate(nomes_atividades, start=3):                    
+                    nome_atv_formula = texto_formula_excel(nome_atv)
                     formula = (
-                        f'=SUMPRODUCT((Distribuição!$A$2:$A$1000="{nome_atv}")*'
-                        f'(Distribuição!$B$2:$B$1000="{turno_colab}")*'
-                        f'(--ISNUMBER(SEARCH("{nome_colab}", Distribuição!$C$2:$AG$1000))))'
+                        f'=SUMPRODUCT((Distribuição!$A$2:$A$1000="{nome_atv_formula}")*'
+                        f'(Distribuição!$B$2:$B$1000="{turno_colab_formula}")*'
+                        f'(--ISNUMBER(SEARCH("{nome_colab_busca}", Distribuição!$C$2:$AG$1000))))'
                     )
                     ws_historico.cell(row=i, column=j).value = formula
 
@@ -242,10 +312,76 @@ def gerar_distribuicao():
             style = TableStyleInfo(name="TableStyleMedium9", showRowStripes=True)
             tab.tableStyleInfo = style
             ws_historico.add_table(tab)
-            
-            # Salvar o arquivo final
-            wb.save(caminho_salvar)
+
+            # ABA RADIO
+            ws_radio = wb.create_sheet(title="RADIO")
+        
+            pracas = [
+                "PO", "SÃO PAULO", "PORTO ALEGRE", "RIO DE JANEIRO",
+                "BELO HORIZONTE", "CURITIBA", "SALVADOR", "GOIÂNIA",
+                "BRASÍLIA", "SANTOS", "FLORIANOPOLIS",
+                "VITÓRIA", "JUIZ DE FORA", "CAMPINAS", "RECIFE"
+            ]
+
+            turnos_lista = ["MANHA", "TARDE"]
+
+            #Cabeçalho
+            datas_ordenadas = sorted(resultado_final.keys(), key=lambda data: converter_data(data) or datetime.max)
+            datas_curtas = [formatar_data_br(d) for d in datas_ordenadas]
+            ws_radio.append(["PRACA", "TURNO"] + datas_curtas)
+
+
+            #Linhas base
+            linhas_base = []
+            for praca in pracas:
+                for turno in turnos_lista:
+                    linhas_base.append({"PRACA": praca, "TURNO": turno})
+
+            #distribuição
+            nomes_organizados = {}
+            for data_chave in datas_ordenadas:
+                nomes_organizados[data_chave] = {}
+                dia_alocacao = resultado_final.get(data_chave, {})
+                
+                for turno in turnos_lista:
+                    dados_radio = dia_alocacao.get(turno, {}).get("RADIO", "")
+                    
+                    # Limpeza dos nomes
+                    if isinstance(dados_radio, list):
+                        lista = [nome_exibicao(n.strip(), mapa_apelidos) for n in dados_radio if n.strip()]
+                    else:
+                        lista = [nome_exibicao(n.strip(), mapa_apelidos) for n in dados_radio.split("/") if n.strip()]
+                    
+                    # Criamos o distribuidor circular para cada turno deste dia
+                    nomes_organizados[data_chave][turno] = cycle(lista) if lista else None
+
+            # 2. Distribuição nas Linhas
+            for idx_linha, base in enumerate(linhas_base, start=2):
+                praca_atual = base["PRACA"]
+                turno_atual = base["TURNO"]
+
+                # Escreve as colunas fixas
+                ws_radio.cell(row=idx_linha, column=1).value = praca_atual
+                ws_radio.cell(row=idx_linha, column=2).value = turno_atual
+
+                # 3. Preenche as colunas de datas para ESTA linha
+                for idx_coluna, data_chave in enumerate(datas_ordenadas, start=3):
+                    # Pegamos o distribuidor que já preparamos lá em cima
+                    distribuidor = nomes_organizados[data_chave][turno_atual]
+                    
+                    if distribuidor:
+                        valor_final = next(distribuidor)
+                    else:
+                        valor_final = ""
+                        
+                    ws_radio.cell(row=idx_linha, column=idx_coluna).value = valor_final
+
+                # Salvar o arquivo final
+                wb.save(caminho_salvar)
 
             CTkMessagebox(title="Sucesso", message="Distribuição baixado com sucesso!", icon="check")
         except Exception as e:
             CTkMessagebox(title="Erro", message=f"Erro ao salvar: {e}", icon="cancel")
+    
+if __name__ == "__main__":
+    gerar_distribuicao()

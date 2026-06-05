@@ -1,79 +1,556 @@
 {
-    "2026-03-01 00:00:00": {
+    "01/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "RODRIGO SEVERO",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "02/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA"
+        ]
+    },
+    "03/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "04/06/2026": {
+        "MANHA": [
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "05/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "06/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY"
+        ]
+    },
+    "07/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY"
+        ]
+    },
+    "08/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "RODRIGO SEVERO",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "09/06/2026": {
+        "MANHA": [
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "10/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "11/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "12/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "13/06/2026": {
+        "MANHA": [
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA"
+        ],
+        "TARDE": [
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA"
+        ]
+    },
+    "14/06/2026": {
+        "MANHA": [
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA"
+        ],
+        "TARDE": [
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA"
+        ]
+    },
+    "15/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "16/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "17/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "18/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "19/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "20/06/2026": {
         "MANHA": [
             "STANLEY FELIX",
             "STEPHANIE DUARTE PIERALLINI",
             "SAMARA BLANCO"
         ],
         "TARDE": [
-            "VICTORIA EVANGELISTA",
+            "ALESSANDRA LISSONI",
             "KARINA VAZ",
+            "IGOR DE SALLES",
             "ERIK OLIVEIRA"
         ]
     },
-    "2026-03-02 00:00:00": {
+    "21/06/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
             "STANLEY FELIX",
             "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "SAMARA BLANCO"
         ],
         "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
+            "ALESSANDRA LISSONI",
             "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA"
         ]
     },
-    "2026-03-03 00:00:00": {
+    "22/06/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
+            "AMANDA CORDEIRO",
             "LEONARDO JULIAO DA COSTA",
             "RODRIGO SEVERO",
             "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
-        ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
-    },
-    "2026-03-04 00:00:00": {
-        "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
             "ETIANE RAMOS DE OLIVEIRA FRANCA",
             "STANLEY FELIX",
             "STEPHANIE DUARTE PIERALLINI",
@@ -91,21 +568,86 @@
             "ANDRESSA GONCALVES",
             "MARCOS THADEU",
             "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
+            "ALESSANDRA LISSONI",
             "KARINA VAZ",
+            "IGOR DE SALLES",
             "ERIK OLIVEIRA",
             "JEAN COSTA",
             "GABRIELA GOMES",
             "RICARDO MOYSES"
         ]
     },
-    "2026-03-05 00:00:00": {
+    "23/06/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
+            "AMANDA CORDEIRO",
             "LEONARDO JULIAO DA COSTA",
             "RODRIGO SEVERO",
             "FAGNER VIANA",
-            "ALDILENE DA SILVA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "24/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
+            "ETIANE RAMOS DE OLIVEIRA FRANCA",
+            "STANLEY FELIX",
+            "STEPHANIE DUARTE PIERALLINI",
+            "SAMARA BLANCO",
+            "KAUE VIEIRA",
+            "NATHALIA MAGALH\u00c3ES",
+            "CAROLINE ARAUJO",
+            "GUSTAVO CHIODE",
+            "THALES RIBEIRO"
+        ],
+        "TARDE": [
+            "JUCELI MENDES",
+            "ROBSON SANTOS",
+            "FERNANDA DE GODOY",
+            "ANDRESSA GONCALVES",
+            "MARCOS THADEU",
+            "CARLOS DANIEL DE LIMA FERREIRA",
+            "ALESSANDRA LISSONI",
+            "KARINA VAZ",
+            "IGOR DE SALLES",
+            "ERIK OLIVEIRA",
+            "JEAN COSTA",
+            "GABRIELA GOMES",
+            "RICARDO MOYSES"
+        ]
+    },
+    "25/06/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO",
+            "LEONARDO JULIAO DA COSTA",
+            "RODRIGO SEVERO",
+            "FAGNER VIANA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
             "ETIANE RAMOS DE OLIVEIRA FRANCA",
             "STANLEY FELIX",
             "STEPHANIE DUARTE PIERALLINI",
@@ -119,18 +661,21 @@
             "ANDRESSA GONCALVES",
             "MARCOS THADEU",
             "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
+            "ALESSANDRA LISSONI",
             "KARINA VAZ",
+            "IGOR DE SALLES",
             "ERIK OLIVEIRA"
         ]
     },
-    "2026-03-06 00:00:00": {
+    "26/06/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
+            "AMANDA CORDEIRO",
             "LEONARDO JULIAO DA COSTA",
             "RODRIGO SEVERO",
             "FAGNER VIANA",
-            "ALDILENE DA SILVA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
             "ETIANE RAMOS DE OLIVEIRA FRANCA",
             "STANLEY FELIX",
             "STEPHANIE DUARTE PIERALLINI",
@@ -148,15 +693,16 @@
             "ANDRESSA GONCALVES",
             "MARCOS THADEU",
             "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
+            "ALESSANDRA LISSONI",
             "KARINA VAZ",
+            "IGOR DE SALLES",
             "ERIK OLIVEIRA",
             "JEAN COSTA",
             "GABRIELA GOMES",
             "RICARDO MOYSES"
         ]
     },
-    "2026-03-07 00:00:00": {
+    "27/06/2026": {
         "MANHA": [
             "NATHALIA MAGALH\u00c3ES",
             "CAROLINE ARAUJO",
@@ -169,7 +715,7 @@
             "RICARDO MOYSES"
         ]
     },
-    "2026-03-08 00:00:00": {
+    "28/06/2026": {
         "MANHA": [
             "NATHALIA MAGALH\u00c3ES",
             "CAROLINE ARAUJO",
@@ -182,13 +728,15 @@
             "RICARDO MOYSES"
         ]
     },
-    "2026-03-09 00:00:00": {
+    "29/06/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
+            "AMANDA CORDEIRO",
             "LEONARDO JULIAO DA COSTA",
             "RODRIGO SEVERO",
             "FAGNER VIANA",
-            "ALDILENE DA SILVA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
             "ETIANE RAMOS DE OLIVEIRA FRANCA",
             "STANLEY FELIX",
             "STEPHANIE DUARTE PIERALLINI",
@@ -206,21 +754,24 @@
             "ANDRESSA GONCALVES",
             "MARCOS THADEU",
             "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
+            "ALESSANDRA LISSONI",
             "KARINA VAZ",
+            "IGOR DE SALLES",
             "ERIK OLIVEIRA",
             "JEAN COSTA",
             "GABRIELA GOMES",
             "RICARDO MOYSES"
         ]
     },
-    "2026-03-10 00:00:00": {
+    "30/06/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
+            "AMANDA CORDEIRO",
             "LEONARDO JULIAO DA COSTA",
             "RODRIGO SEVERO",
             "FAGNER VIANA",
-            "ALDILENE DA SILVA",
+            "MILENA BATISTA",
+            "DAIANE SOUSA",
+            "ARLENE RODRIGUES",
             "ETIANE RAMOS DE OLIVEIRA FRANCA",
             "STANLEY FELIX",
             "STEPHANIE DUARTE PIERALLINI",
@@ -234,504 +785,1114 @@
             "ANDRESSA GONCALVES",
             "MARCOS THADEU",
             "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
+            "ALESSANDRA LISSONI",
             "KARINA VAZ",
+            "IGOR DE SALLES",
             "ERIK OLIVEIRA"
         ]
     },
-    "2026-03-11 00:00:00": {
+    "01/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-12 00:00:00": {
+    "02/07/2026": {
         "MANHA": [
-            "ALDILENE DA SILVA",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-13 00:00:00": {
+    "03/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-14 00:00:00": {
+    "04/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY"
-        ]
+        "TARDE": []
     },
-    "2026-03-15 00:00:00": {
+    "05/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "JUCELI MENDES",
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY"
-        ]
+        "TARDE": []
     },
-    "2026-03-16 00:00:00": {
+    "06/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-17 00:00:00": {
+    "07/07/2026": {
         "MANHA": [
-            "ALDILENE DA SILVA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-18 00:00:00": {
+    "08/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-19 00:00:00": {
+    "09/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-20 00:00:00": {
+    "10/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-21 00:00:00": {
+    "11/07/2026": {
         "MANHA": [
-            "ALDILENE DA SILVA"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA"
-        ]
+        "TARDE": []
     },
-    "2026-03-22 00:00:00": {
+    "12/07/2026": {
         "MANHA": [
-            "ALDILENE DA SILVA"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA"
-        ]
+        "TARDE": []
     },
-    "2026-03-23 00:00:00": {
+    "13/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-24 00:00:00": {
+    "14/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-25 00:00:00": {
+    "15/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-26 00:00:00": {
+    "16/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-27 00:00:00": {
+    "17/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-28 00:00:00": {
+    "18/07/2026": {
         "MANHA": [
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA"
-        ]
+        "TARDE": []
     },
-    "2026-03-29 00:00:00": {
+    "19/07/2026": {
         "MANHA": [
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA"
-        ]
+        "TARDE": []
     },
-    "2026-03-30 00:00:00": {
+    "20/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "STANLEY FELIX",
-            "STEPHANIE DUARTE PIERALLINI",
-            "SAMARA BLANCO",
-            "KAUE VIEIRA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "VICTORIA EVANGELISTA",
-            "KARINA VAZ",
-            "ERIK OLIVEIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
     },
-    "2026-03-31 00:00:00": {
+    "21/07/2026": {
         "MANHA": [
-            "MATHEUS FONSECA",
-            "LEONARDO JULIAO DA COSTA",
-            "RODRIGO SEVERO",
-            "FAGNER VIANA",
-            "ALDILENE DA SILVA",
-            "ETIANE RAMOS DE OLIVEIRA FRANCA",
-            "NATHALIA MAGALH\u00c3ES",
-            "CAROLINE ARAUJO",
-            "GUSTAVO CHIODE",
-            "THALES RIBEIRO"
+            "AMANDA CORDEIRO"
         ],
-        "TARDE": [
-            "ROBSON SANTOS",
-            "FERNANDA DE GODOY",
-            "ANDRESSA GONCALVES",
-            "MARCOS THADEU",
-            "CARLOS DANIEL DE LIMA FERREIRA",
-            "JEAN COSTA",
-            "GABRIELA GOMES",
-            "RICARDO MOYSES"
-        ]
+        "TARDE": []
+    },
+    "22/07/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "23/07/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "24/07/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "25/07/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "26/07/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "27/07/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "28/07/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "29/07/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "30/07/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "31/07/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "01/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "02/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "03/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "04/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "05/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "06/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "07/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "08/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "09/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "10/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "11/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "12/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "13/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "14/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "15/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "16/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "17/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "18/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "19/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "20/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "21/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "22/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "23/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "24/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "25/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "26/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "27/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "28/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "29/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "30/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "31/08/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "01/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "02/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "03/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "04/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "05/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "06/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "07/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "08/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "09/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "10/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "11/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "12/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "13/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "14/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "15/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "16/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "17/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "18/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "19/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "20/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "21/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "22/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "23/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "24/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "25/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "26/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "27/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "28/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "29/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "30/09/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "01/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "02/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "03/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "04/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "05/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "06/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "07/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "08/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "09/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "10/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "11/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "12/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "13/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "14/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "15/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "16/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "17/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "18/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "19/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "20/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "21/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "22/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "23/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "24/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "25/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "26/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "27/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "28/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "29/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "30/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "31/10/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "01/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "02/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "03/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "04/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "05/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "06/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "07/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "08/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "09/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "10/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "11/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "12/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "13/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "14/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "15/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "16/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "17/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "18/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "19/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "20/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "21/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "22/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "23/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "24/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "25/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "26/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "27/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "28/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "29/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "30/11/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "01/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "02/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "03/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "04/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "05/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "06/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "07/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "08/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "09/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "10/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "11/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "12/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "13/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "14/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "15/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "16/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "17/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "18/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "19/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "20/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "21/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "22/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "23/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "24/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "25/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "26/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "27/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "28/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "29/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "30/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
+    },
+    "31/12/2026": {
+        "MANHA": [
+            "AMANDA CORDEIRO"
+        ],
+        "TARDE": []
     }
 }
