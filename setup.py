@@ -7,8 +7,29 @@ def get_customtkinter_path():
     return os.path.dirname(customtkinter.__file__)
 
 build_exe_options = {
-    "packages": ["os", "customtkinter", "logica_interface", "logica_negocio", "PIL"],
-    "include_files": ["link.png", (get_customtkinter_path(), "customtkinter")],
+    "packages": [
+        "os",
+        "json",
+        "random",
+        "datetime",
+        "itertools",
+        "tkinter",
+        "customtkinter",
+        "CTkMessagebox",
+        "PIL",
+        "pandas",
+        "openpyxl",
+    ],
+    "includes": [
+        "logica_interface",
+        "logica_negocio",
+        "apelidos_utils",
+    ],
+    "include_files": [
+        "link.png",
+        (get_customtkinter_path(), "customtkinter"),
+    ],
+    "include_msvcr": True,
 }
 
 base = None
@@ -17,8 +38,8 @@ if sys.platform == "win32":
 
 setup(
     name="Distribuidor",
-    version="0.3",
-    description="Distribuidor de atividades",
+    version="1.0",
+    description="Distribuidor de atividades - 1.0",
     options={"build_exe": build_exe_options},
     executables=[
         Executable(
